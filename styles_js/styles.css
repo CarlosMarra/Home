@@ -225,25 +225,25 @@ body{
 }
 
 .choice_wooter{
-	background: url('wooter.svg');	
+	background: url('../images/wooter.svg');	
   background-size: cover;
   background-position: 40% 100%;
 }
 
 .choice_pixel{
-	background: url('pixel.svg');	
+	background: url('../images/pixel.svg');	
   background-size: cover;
   background-position: 40% 100%;
 }
 
 .choice_sbs{
-  	background: url('stand.svg');	
+  	background: url('../images/stand.svg');	
   background-size: cover;
   background-position: 40% 100%;
 }
 
 .choice_resume{
-	background: url('proving.svg');	
+	background: url('../images/proving.svg');	
   background-size: cover;
   background-position: 40% 100%;
 }
