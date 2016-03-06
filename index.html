@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Carlos Marra</title>
+	  <meta name="description" content="The HTML5 Herald">
+	  <meta name="author" content="SitePoint">
+  	  <link rel="stylesheet" href="animate.css">
+ 	  <link rel="stylesheet" href="styles.css">
+	  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+	  <!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
+	  <script type="text/javascript" src="pdfobject.js"></script>
+	  <script type="text/javascript">
+	    window.onload = function (){
+	      var success = new PDFObject({ url: "resume.pdf" }).embed("pdf");
+	    };
+	  </script>
+
+	</head>
+	<body>
+	<div layout="row" class='child'  flex layout-align="center center">
+	  	<div layout="column" layout-align="center" class='first_phase_animation'>
+		   	<div class="rainbow_position_after">
+		   		<div class='rainbows_after'>
+			   		<div class='blue_after colors'></div>
+			   		<div class='green_after colors'></div>
+			   		<div class='yellow_after colors'></div>
+			   		<div class='orange_after colors'></div>
+			   		<div class='red_after colors '></div>
+			   		<div class="clear"></div>
+			   	</div>
+			</div>
+	  	</div>
+	    <div layout="column" layout-align="center" class='first_phase_animation'>
+		   	<div class="rainbow_position_before">
+		   		<div class='rainbows_before'>
+			   		<div class='red_before colors hide'></div>
+			   		<div class='orange_before colors hide'></div>
+			   		<div class='yellow_before colors hide'></div>
+			   		<div class='green_before colors hide'></div>
+			   		<div class='blue_before colors hide'></div>
+			   		<div class="clear"></div>
+			   	</div>
+			</div>	
+	   		<a href="#" class='open_mail' id='open_mail'><img class='mailbox' src="mail-2.png" alt=""></a>
+	  	</div>
+ 	</div>
+	<div class='second_phase_animation'>
+		<div class="white_resume md-whiteframe-5dp hide">
+		   	<style>
+				.left_side{
+					width: calc(40% - 10px);
+					float: left;
+					height: calc(100% - 10px);
+				    background: #5ea2b7; /* For browsers that do not support gradients */
+				    background: -webkit-linear-gradient(#5ea2b7, #73ccf3); /* For Safari 5.1 to 6.0 */
+				    background: -o-linear-gradient(#5ea2b7, #73ccf3); /* For Opera 11.1 to 12.0 */
+				    background: -moz-linear-gradient(#5ea2b7, #73ccf3); /* For Firefox 3.6 to 15 */
+				    background: linear-gradient(#5ea2b7, #73ccf3); /* Standard syntax */
+				    margin-right: 10px;
+				}
+
+				.left_side > img{
+				    width: 50%;
+				    margin: 10% 25% 0%;
+				}
+
+				.left_side > h1{
+				   text-align: center;
+				   color: white;
+				   font-size: 1.5vw;
+				}
+
+
+				.work > p,
+				.resume > p{
+					float: left;
+					color: white;
+				   color: white;
+				   font-size: 1.25vw;
+				   cursor: pointer;
+				}
+				
+				.point{
+					text-align: right;
+					width: 30%;
+				}
+
+				.textwidth{
+					text-align: center;
+					width:40%;
+					margin-right: 30%;
+				}
+
+				.point > span{
+    				padding: .6vw 1vw;
+    			    border-radius: 50%;
+				    background-color: grey
+				}
+
+				.activate{
+					background-color: green!important;
+				}
+
+ 				.right_side, .right_side2{
+					width: 60%;
+					float: left;
+					height: 100%;
+				}
+
+				.right_side2{
+					height: calc(100% - 10px)!important;
+				}
+			</style>
+
+
+			<div class="left_side">	   		
+				<img src="face.svg" alt="Cartoon Representation of Carlos Marra's face.">
+				<h1>Carlos Marra</h1>
+				<br>
+				<div class="work">
+					<p class='pointer_w point'> <span class='arrow_w activate'>></span> </p>
+					<p class="textwidth"> Work</p>
+				</div>
+				<div class='resume'>
+					<p class='pointer_r point'> <span class='arrow_r'>></span> </p>
+					<p class="textwidth"> Resume</p>
+				</div>
+			</div>
+
+			<div class="right_side">
+				<div class="coolglowingthings_2">
+				   	<a href="http://wooter.co" target='_blank'>
+				   		<div class='box_hover'>
+				   			<div class='choices choice_wooter hide'></div>
+				   		</div>
+				   	</a>
+			   	</div>
+			   	<div class="coolglowingthings_2">
+				   	<a href="http://pixelpusher.carlosamarra.com" target='_blank'>
+				   		<div class='box_hover'>
+				   			<div class='choices choice_resume hide'></div>
+				   		</div>
+				   	</a>
+			   	</div>		   	
+			   	<div class="coolglowingthings_2">
+				   	<a href="http://pixelpusher.carlosamarra.com" target='_blank'>
+				   		<div class='box_hover'>
+				   			<div class='choices choice_pixel hide'></div>
+				   		</div>
+				   	</a>
+			   	</div>
+			   	<div class="coolglowingthings_2" style='margin:0px'>
+				   	<a href="http://standbrightstudios.com" target='_blank'>
+					   	<div class='box_hover'>
+				   			<div class='choices choice_sbs hide'></div>
+				   		</div>
+				   	</a>
+			   	</div> 
+			</div>
+
+			<div class="right_side2 hide">
+			    <div id="pdf" style="height:100%; padding-bottom:15px;"><p>It appears you don't have Adobe Reader or PDF support in this web
+			    browser. <a href="resume.pdf">Click here to download the PDF</a></p></div>
+			</div>
+
+			<div class="clear"></div>
+		</div>	
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+	</body>
+</html>	

@@ -1,0 +1,249 @@
+/*General CSS*/
+body{
+	width: 100vw!important;
+	margin: 0!important;
+	padding: 0!important;
+	position: relative!important;
+	background-color: #303030!important;
+	height: 100vh!important;
+	overflow: hidden!important;
+}
+
+.hide{display: none;}
+
+.clear{clear: both;}
+
+
+/*FIRST PHASE ANIMATION*/
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first_phase_animation{
+	width: 20vw;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+.rainbow_position_after{
+    position: absolute;
+    width: 20vw;
+    min-width: 300px;
+    top: -125vw;
+    z-index: 50;
+}
+
+.rainbows_after{
+	position: absolute;
+	width: 100%;
+    top: 0;
+    padding-top: 0vh;
+}
+
+.rainbow_position_before{
+    position: absolute;
+    width: 20vw;
+    min-width: 300px;
+    top: 3vw;
+    z-index: 20;
+}
+
+.rainbows_before{
+	position: absolute;
+	width: 100%;
+    bottom: 41px;
+    padding-top: 0vh;
+}
+
+.open_mail{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, 50%);
+    z-index: 100;
+}
+
+.mailbox{
+	width: 20vw;
+	min-width: 300px;
+}
+
+/*Staring Point for BOTH Rainbows*/
+
+.colors{
+	width: 4vw;
+	height: 4vw;
+	float: left;
+    min-width: 60px;	
+    min-height: 60px;	
+  
+}
+
+.red_before, .red_after{
+	background-color: red;
+}
+
+.orange_before, .orange_after{
+	background-color: orange;
+}
+
+.yellow_before, .yellow_after{
+	background-color: yellow;
+}
+
+.green_before, .green_after{
+	background-color: green;
+}
+
+.blue_before, .blue_after{
+	background-color: blue;
+}
+
+
+/*KeyFrames for IR*/
+/*Animation Classes for IR*/
+
+
+.animations {
+  	-webkit-animation: rainbow_sprout .5s; /* Safari 4+ */
+  	-moz-animation:    rainbow_sprout .5s; /* Fx 5+ */
+  	-o-animation:      rainbow_sprout .5s; /* Opera 12+ */
+  	animation:         rainbow_sprout .5s; /* IE 10+, Fx 29+ */
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;	
+}
+
+@-webkit-keyframes rainbow_sprout {
+  	0%   { padding-top: 0px; margin-top: 0px; }
+	100% { padding-top: 6000px; margin-top: -6000px; }
+}
+
+@-moz-keyframes rainbow_sprout {
+	0%   { padding-top: 0px; margin-top: 0px; }
+	100% { padding-top: 6000px; margin-top: -6000px; }
+}
+
+@-o-keyframes rainbow_sprout {
+	0%   { padding-top: 0px; margin-top: 0px; }
+	100% { padding-top: 6000px; margin-top: -6000px; }
+}
+
+@keyframes rainbow_sprout {
+	0%   { padding-top: 0px; margin-top: 0px; }
+	100% { padding-top: 6000px; margin-top: -6000px; }
+}
+
+
+/*KeyFrames for SR*/
+/*Animation Classes for SR*/
+
+.animations22 {
+  	-webkit-animation: rainbow_decline .5s; /* Safari 4+ */
+  	-moz-animation:    rainbow_decline .5s; /* Fx 5+ */
+  	-o-animation:      rainbow_decline .5s; /* Opera 12+ */
+  	animation:         rainbow_decline .5s; /* IE 10+, Fx 29+ */
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;	
+}
+
+@-webkit-keyframes rainbow_decline {
+	0%   { height: 0px; }
+	100% { height: 400vh; }
+}
+	
+@-moz-keyframes rainbow_decline {
+	0%   { height: 0px; }
+	100% { height: 400vh; }
+}
+	
+@-o-keyframes rainbow_decline {
+	0%   { height: 0px; }
+	100% { height: 400vh; }
+}
+	
+@keyframes rainbow_decline {
+	0%   { height: 0px; }
+	100% { height: 400vh; }
+}
+
+
+/*SECOND PHASE ANIMATION*/
+
+.second_phase_animation{
+    min-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+}
+
+.white_resume {
+    width: 62%;
+    min-width: 900px;
+    margin: 0 auto;
+    height: 80vh;
+    max-height: 40vw; 
+    min-height: 506px;
+    background-color: #b0dae4;
+    margin: 9vh auto;
+    padding: 40px;
+    padding-bottom: 30px;
+}
+
+.coolglowingthings_2{
+    height: calc(25% - 10px);
+    margin-bottom: 10px;
+}
+
+.box_hover{
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.box_hover > div > h1{
+    position: absolute;
+    top: 0px;
+    margin: 0px -20px;
+    width: 100%;
+    text-align: right;
+    color: white;
+    font-size: 4vw;
+}
+
+.choices{
+    width: 100%;
+    height: 100%;
+}
+
+.choice_wooter{
+	background: url('wooter.svg');	
+  background-size: cover;
+  background-position: 40% 100%;
+}
+
+.choice_pixel{
+	background: url('pixel.svg');	
+  background-size: cover;
+  background-position: 40% 100%;
+}
+
+.choice_sbs{
+  	background: url('stand.svg');	
+  background-size: cover;
+  background-position: 40% 100%;
+}
+
+.choice_resume{
+	background: url('proving.svg');	
+  background-size: cover;
+  background-position: 40% 100%;
+}
